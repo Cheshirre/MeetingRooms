@@ -51,8 +51,7 @@
         <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
     </platform>
     <platform name="ios">
-		<icon src="res/icon/ios/icon-1024.png" width="1024" height="1024"/>
-		<icon src="res/icon/ios/icon-small.png" width="29" height="29"/>
+
     </platform>
     <platform name="wp8">
         <icon height="99" platform="wp8" src="www/res/icon/wp8/ApplicationIcon.png" width="99" />
