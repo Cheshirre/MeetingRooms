@@ -46,6 +46,11 @@ var app = {
 		
 		var ref = window.open('http://ekb-app_srv.ga.loc:8090/meetingrooms', '_blank', 'location=no,toolbar=no');
 		ref.addEventListener('loadstart', function() { alert(event.url); });
+		
+		if (window.StatusBar) {
+		  StatusBar.overlaysWebView(false);
+		  StatusBar.overlaysWebView(true);
+		}
 
         console.log('Received Event: ' + id);
     }
