@@ -37,16 +37,7 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        //listeningElement.setAttribute('style', 'display:none;');
-        //receivedElement.setAttribute('style', 'display:block;');
 		
-		var ref = window.open('http://ekb-app_srv.ga.loc:8090/meetingrooms', '_self');
-		//ref.addEventListener('loadstart', function() { alert(event.url); });
-
-        //console.log('Received Event: ' + id);
+		var ref = window.open('http://ekb-app_srv.ga.loc:8090/meetingrooms', '_blank', 'location=no,toolbar=no');
     }
 };
