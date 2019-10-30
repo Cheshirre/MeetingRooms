@@ -44,9 +44,9 @@ var app = {
         //listeningElement.setAttribute('style', 'display:none;');
         //receivedElement.setAttribute('style', 'display:block;');
 		
-		var ref = window.open('http://ekb-app_srv.ga.loc:8090/meetingrooms', '_blank', 'location=no,toolbar=no');
-		ref.addEventListener('loadstart', function() { alert(event.url); });
+		var ref = window.open('http://ekb-app_srv.ga.loc:8090/meetingrooms', '_self');
+		//ref.addEventListener('loadstart', function() { alert(event.url); });
 
-        console.log('Received Event: ' + id);
+        //console.log('Received Event: ' + id);
     }
 };
