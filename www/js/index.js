@@ -34,18 +34,15 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-
+		document.addEventListener('native.keyboardshow', function () {
+            cordova.plugins.Keyboard.disableScroll(true);
+       });
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
 		
 		var ref = window.open('http://ekb-app_srv.ga.loc:8090/meetingrooms', '_blank', 'location=no,toolbar=no');
-		
-		popup.addEventListener("loadstop", function() {
-			var myButton = document.getElementsByClassName("editor-save-btn");
-			myButton.addEventListener("click", clicked, false);
-		});
-		
+				
     }
 };
 
