@@ -34,9 +34,6 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-		document.addEventListener('native.keyboardshow', function () {
-            cordova.plugins.Keyboard.disableScroll(true);
-       });
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
