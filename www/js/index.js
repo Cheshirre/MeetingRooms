@@ -42,7 +42,7 @@ var app = {
 		var ref = window.open('http://ekb-app_srv.ga.loc:8090/meetingrooms', '_blank', 'location=no,toolbar=no');
 		
 		popup.addEventListener("loadstop", function() {
-			var myButton = document.getElementsByClassName("btnClick");
+			var myButton = document.getElementsByClassName("editor-save-btn");
 			myButton.addEventListener("click", clicked, false);
 		});
 		
