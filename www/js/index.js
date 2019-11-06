@@ -34,10 +34,22 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
 		
 		var ref = window.open('http://ekb-app_srv.ga.loc:8090/meetingrooms', '_blank', 'location=no,toolbar=no');
+		
+		popup.addEventListener("loadstop", function() {
+			var myButton = document.getElementsByClassName("btnClick");
+			myButton.addEventListener("click", clicked, false);
+		});
+		
     }
 };
+
+function clicked()
+{
+    alert("You clicked a button.");
+}

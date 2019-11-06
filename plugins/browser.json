@@ -66,6 +66,9 @@
         },
         "cordova-plugin-wkwebview-engine": {
             "PACKAGE_NAME": "com.phonegap.meetings"
+        },
+        "cordova-plugin-keyboard": {
+            "PACKAGE_NAME": "com.phonegap.meetings"
         }
     },
     "dependent_plugins": {
