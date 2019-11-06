@@ -36,8 +36,7 @@ var app = {
         app.receivedEvent('deviceready');
 		
 		if (window.cordova && window.cordova.plugins.Keyboard) {
-			cordova.plugins.Keyboard.disableScroll(true);
-			cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+			cordova.plugins.Keyboard.disableScroll(false);
 			}
     },
     // Update DOM on a Received Event

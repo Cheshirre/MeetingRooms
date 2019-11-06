@@ -102,6 +102,10 @@ h1 {
     -webkit-animation:fade 3000ms infinite;
 }
 
+.input-cover {
+    position: static;
+}
+
 html 
 {
 -webkit-user-select: none;
