@@ -27,6 +27,14 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+		document.addEventListener('keyboardDidHide', function () {
+			navigator.notification.alert(
+				'KeyoardHide',  // message
+				alertDismissed,         // callback
+				'Game Over',            // title
+				'Done'                  // buttonName
+			);	
+		});
     },
     // deviceready Event Handler
     //
@@ -43,8 +51,3 @@ var app = {
 				
     }
 };
-
-function clicked()
-{
-    alert("You clicked a button.");
-}
